@@ -1,5 +1,5 @@
 {
-  description = "A development environment to run typescript in neovim";
+  description = "A development environment to code typescript in neovim";
 
   inputs = {
     nvim-vimrc-code.url = "github:argent0/flake-nvim-vimrc-code";
@@ -11,7 +11,7 @@
   in {
 
     packages.x86_64-linux.default = pkgs.stdenv.mkDerivation {
-      name = "flake-nvim-typescript";
+      name = "nvim-typescript";
       src = ./.;
       buildInputs = with pkgs; [
         nvim-vimrc-code.packages.x86_64-linux.default
